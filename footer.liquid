@@ -181,20 +181,10 @@
                 {%- if form.posted_successfully? -%}
                   <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
                 {%- endif -%}
-              {%- endform -%} 
-            {%- endif -%}   
-         </div>          
-             <div class="my-footer-block">
-              <h4>Info</h4>
-               <ul>
-                 <li><a href="/pages/refund-policy">Refund Policy</a><li>
-                 <li><a href="/pages/privacy-policy">Privacy Policy</a><li>
-                 <li><a href="/pages/terms-of-service">Terms of Service</a><li>
-               </ul>
-         </div>
-          
-  
-          
+              {%- endform -%}
+            </div>
+          {%- endif -%}
+
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
             <div class="footer__follow-on-shop">
             {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
